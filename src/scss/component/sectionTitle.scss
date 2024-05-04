@@ -1,0 +1,42 @@
+.SectionTitle {
+  color: #b48868;
+  font-family: $raleway;
+  font-size: vwpc(36);
+  font-weight: 400;
+  letter-spacing: vwpc(3.6);
+  margin-left: vwpc(30);
+  line-height: normal;
+  &-white {
+    color: #fff;
+  }
+  &-gray {
+    color: #474747;
+  }
+  &_lead {
+    color: #b48868;
+    font-size: vwpc(10);
+    line-height: vwpc(22.4);
+    letter-spacing: vwpc(1);
+    margin-left: vwpc(30);
+    &-white {
+      color: #fff;
+    }
+    &-gray {
+      color: #474747;
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .SectionTitle {
+    font-size: vwsp(36);
+    letter-spacing: vwsp(3.6);
+    margin-left: vwsp(30);
+    &_lead {
+      font-size: vwsp(10);
+      line-height: vwsp(22.4);
+      letter-spacing: vwsp(1);
+      margin-left: vwsp(30);
+    }
+  }
+}

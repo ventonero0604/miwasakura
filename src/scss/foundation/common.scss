@@ -41,26 +41,3 @@ select[multiple],
 button {
   border: none;
 }
-
-/* placeholder */
-/* Webkit */
-::-webkit-input-placeholder {
-  color: $gray-1;
-  opacity: 1;
-}
-
-/* Firefox 18 以前 */
-:-moz-placeholder {
-  color: $gray-1;
-}
-
-/* Firefox 19 以降 */
-::-moz-placeholder {
-  color: $gray-1;
-  opacity: 1;
-}
-
-/* IE 10 以降 */
-:-ms-input-placeholder {
-  color: $gray-1;
-}

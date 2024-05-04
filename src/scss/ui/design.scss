@@ -1,0 +1,68 @@
+.Design {
+  margin-top: vwpc(36);
+  .images {
+    display: flex;
+    align-items: center;
+    gap: vwpc(4);
+    margin-top: vwpc(32);
+    padding: 0 vwpc(24);
+    .content {
+      display: grid;
+      gap: vwpc(3);
+    }
+    .name {
+      display: flex;
+      justify-content: center;
+      gap: vwpc(12);
+      .text {
+        width: vwpc(76);
+      }
+    }
+    .link {
+      display: block;
+      width: vwpc(22);
+      height: vwpc(22);
+    }
+  }
+  .texts {
+    margin-top: vwpc(20);
+    padding: 0 vwpc(50);
+    font-size: vwpc(12);
+    line-height: vwpc(22.4);
+    letter-spacing: vwpc(1.2);
+    display: grid;
+    gap: vwpc(20);
+  }
+}
+
+@include breakPoint(md) {
+  .Design {
+    margin-top: vwsp(36);
+    .images {
+      gap: vwsp(4);
+      margin-top: vwsp(32);
+      padding: 0 vwsp(24);
+      .content {
+        gap: vwsp(3);
+      }
+      .name {
+        gap: vwsp(12);
+        .text {
+          width: vwsp(76);
+        }
+      }
+      .link {
+        width: vwsp(22);
+        height: vwsp(22);
+      }
+    }
+    .texts {
+      margin-top: vwsp(20);
+      padding: 0 vwsp(50);
+      font-size: vwsp(12);
+      line-height: vwsp(22.4);
+      letter-spacing: vwsp(1.2);
+      gap: vwsp(20);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.Button {
+  height: vwpc(42);
+  border-radius: 100vh;
+  background-color: #ee8a98;
+  color: white;
+  display: inline-flex;
+  padding-inline: vwpc(20);
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: vwpc(10);
+    font-size: vwpc(12);
+    font-weight: 500;
+    letter-spacing: vwpc(1.2);
+    img {
+      width: vwpc(5);
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .Button {
+    height: vwsp(42);
+    padding-inline: vwsp(20);
+
+    div {
+      gap: vwsp(10);
+      font-size: vwsp(12);
+      letter-spacing: vwsp(1.2);
+      img {
+        width: vwsp(5);
+      }
+    }
+  }
+}

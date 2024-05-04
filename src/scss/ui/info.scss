@@ -1,0 +1,14 @@
+.Info {
+  background-image: url(/img/info_bg.png);
+  background-size: cover;
+  background-position: center;
+  height: vwpc(2140);
+  padding-top: vwpc(45);
+}
+
+@include breakPoint(md) {
+  .Info {
+    height: vwsp(2140);
+    padding-top: vwsp(45);
+  }
+}

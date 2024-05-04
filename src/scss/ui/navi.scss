@@ -1,0 +1,52 @@
+.Navi {
+  position: fixed;
+  top: 50%;
+  left: vwpc(321);
+  transform: translateY(-50%);
+
+  .logo {
+    width: vwpc(101);
+    img {
+      width: 100%;
+    }
+  }
+  .list {
+    margin-top: vwpc(36);
+    a {
+      color: #db7281;
+      font-family: $mincho;
+      font-size: vwpc(20);
+      font-style: normal;
+      font-weight: 500;
+      line-height: vwpc(43);
+      letter-spacing: vwpc(2);
+    }
+  }
+  .sns {
+    margin-top: vwpc(78);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    a {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+    .insta {
+      width: vwpc(24);
+    }
+    .x {
+      width: vwpc(20);
+    }
+    .line {
+      width: vwpc(29);
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .Navi {
+    display: none;
+  }
+}

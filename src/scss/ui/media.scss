@@ -1,0 +1,117 @@
+.Media {
+  .insta {
+    display: grid;
+    place-items: center;
+    padding: 0 vwpc(18) vwpc(8);
+    .subTitle {
+      width: vwpc(168);
+      img {
+        width: 100%;
+      }
+    }
+    .title {
+      margin-top: vwpc(20);
+      width: vwpc(284);
+      img {
+        width: 100%;
+      }
+    }
+    .tags {
+      display: flex;
+      gap: vwpc(8);
+      margin-top: vwpc(14);
+    }
+    .tag {
+      background-color: #000;
+      height: vwpc(20);
+      padding-inline: vwpc(8);
+      border-radius: 100vh;
+      color: white;
+      font-size: vwpc(12);
+      display: grid;
+      place-items: center;
+    }
+    .image {
+      margin-top: vwpc(16);
+    }
+    .button {
+      width: vwpc(158);
+      margin-top: vwpc(42);
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .media {
+    margin-top: vwpc(38);
+    .item {
+      width: vwpc(211);
+      margin: vwpc(40) auto;
+      display: grid;
+      gap: vwpc(20);
+    }
+    .image {
+      display: grid;
+      gap: vwpc(24);
+    }
+    .text {
+      font-style: normal;
+      font-weight: 400;
+      line-height: vwpc(22.4);
+      letter-spacing: vwpc(1.4);
+      font-size: vwpc(14);
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .Media {
+    .insta {
+      padding: 0 vwsp(18) vwsp(8);
+      .subTitle {
+        width: vwsp(168);
+      }
+      .title {
+        margin-top: vwsp(20);
+        width: vwsp(284);
+      }
+      .tags {
+        gap: vwsp(8);
+        margin-top: vwsp(14);
+      }
+      .tag {
+        height: vwsp(20);
+        padding-inline: vwsp(8);
+        font-size: vwsp(12);
+      }
+      .image {
+        margin-top: vwsp(16);
+      }
+      .button {
+        width: vwsp(158);
+        margin-top: vwsp(42);
+      }
+    }
+
+    .media {
+      margin-top: vwsp(38);
+      .item {
+        width: vwsp(211);
+        margin: vwsp(40) auto;
+        gap: vwsp(20);
+      }
+      .image {
+        gap: vwsp(24);
+      }
+      .text {
+        line-height: vwsp(22.4);
+        letter-spacing: vwsp(1.4);
+        font-size: vwsp(14);
+      }
+    }
+  }
+}

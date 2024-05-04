@@ -1,0 +1,34 @@
+.Lead {
+  color: var(--color-pink);
+  display: grid;
+  gap: vwpc(40);
+  .title {
+    font-size: vwpc(27);
+    font-weight: 500;
+    line-height: vwpc(43);
+    letter-spacing: vwpc(3);
+    font-family: $mincho;
+    text-align: center;
+  }
+  .text {
+    font-size: vwpc(12);
+    font-weight: 400;
+    line-height: vwpc(20);
+    text-align: center;
+  }
+}
+
+@include breakPoint(md) {
+  .Lead {
+    gap: vwsp(40);
+    .title {
+      font-size: vwsp(27);
+      line-height: vwsp(43);
+      letter-spacing: vwsp(3);
+    }
+    .text {
+      font-size: vwsp(12);
+      line-height: vwsp(20);
+    }
+  }
+}

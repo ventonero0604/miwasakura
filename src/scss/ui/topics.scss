@@ -1,0 +1,124 @@
+.Topics {
+  margin-top: vwpc(380);
+  padding-top: vwpc(40);
+  position: relative;
+  &:before {
+    top: vwpc(-320);
+    left: 50%;
+    content: '';
+    position: absolute;
+    display: block;
+    width: vwpc(186);
+    height: vwpc(383);
+    background: center / cover no-repeat url(/img/topics_img.png);
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  &:after {
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: vwpc(44);
+    background: center / cover no-repeat url(/img/topics_bg.png);
+  }
+
+  .wrapper {
+    background-color: #fff3f5;
+    padding: vwpc(30) vwpc(14) vwpc(100);
+  }
+
+  .title {
+    color: #ee8a98;
+    font-family: $raleway;
+    font-size: vwpc(36);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: vwpc(3.6);
+    display: flex;
+    align-items: center;
+    gap: vwpc(24);
+    margin-left: vwpc(16);
+    span {
+      color: #ee8a98;
+      font-family: 'Noto Sans JP';
+      font-size: vwpc(10);
+      font-weight: 400;
+      line-height: vwpc(22.4);
+      letter-spacing: vwpc(1);
+    }
+  }
+
+  .list {
+    margin-block: vwpc(16) vwpc(22);
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .item {
+    border-bottom: 1px solid #d9d9d9;
+    &_inner {
+      display: grid;
+      gap: vwpc(5);
+      padding: vwpc(10) vwpc(16);
+      color: #474747;
+      font-size: vwpc(14);
+      line-height: vwpc(22.4);
+      letter-spacing: vwpc(1.4);
+    }
+  }
+
+  .Button {
+    margin-left: vwpc(16);
+  }
+}
+
+@include breakPoint(md) {
+  .Topics {
+    margin-top: vwsp(380);
+    padding-top: vwsp(40);
+    &:before {
+      top: vwsp(-320);
+      width: vwsp(186);
+      height: vwsp(383);
+    }
+    &:after {
+      height: vwsp(44);
+    }
+
+    .wrapper {
+      padding: vwsp(30) vwsp(14) vwsp(100);
+    }
+
+    .title {
+      font-size: vwsp(36);
+      letter-spacing: vwsp(3.6);
+      gap: vwsp(24);
+      margin-left: vwsp(16);
+      span {
+        font-size: vwsp(10);
+        line-height: vwsp(22.4);
+        letter-spacing: vwsp(1);
+      }
+    }
+
+    .list {
+      margin-block: vwsp(16) vwsp(22);
+    }
+
+    .item {
+      &_inner {
+        gap: vwsp(5);
+        padding: vwsp(10) vwsp(16);
+        font-size: vwsp(14);
+        line-height: vwsp(22.4);
+        letter-spacing: vwsp(1.4);
+      }
+    }
+
+    .Button {
+      margin-left: vwsp(16);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.Background {
+  position: fixed;
+  background-image: url(/img/bg_fixed.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  transition: all 0.2s;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,0 +1,119 @@
+.Kv {
+  background: linear-gradient(180deg, #f2b4bc 0%, #f8d7db 84%, #fff 100%);
+  color: var(--color-key);
+  position: relative;
+  height: vwpc(700);
+  display: grid;
+  place-items: center;
+  transition: all 0.2s;
+  &:before {
+    content: '';
+    display: block;
+    background: top / cover no-repeat url('/img/kv_bg.png');
+    mix-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    gap: vwpc(10);
+    overflow: hidden;
+  }
+  .title {
+    font-family: $mincho;
+    writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: column;
+    gap: vwpc(10);
+    span {
+      display: block;
+      font-weight: 500;
+      font-feature-settings: 'clig' off, 'liga' off;
+      letter-spacing: vwpc(3);
+    }
+    .text1 {
+      font-size: vwpc(30);
+      line-height: 1.3;
+    }
+    .text2 {
+      font-size: vwpc(21);
+      line-height: 1.2; /* 93.368% */
+      margin-top: vwpc(74);
+    }
+    .text3 {
+      font-size: vwpc(17);
+      line-height: 1.2;
+      margin-top: vwpc(161);
+    }
+  }
+  .text {
+    padding-right: vwpc(16);
+  }
+  .image {
+    width: vwpc(257);
+  }
+  .sns {
+    display: grid;
+    justify-items: flex-end;
+    gap: vwpc(24);
+    margin-top: vwpc(10);
+    margin-right: vwpc(4);
+    li {
+      width: vwpc(29);
+      transition: all 0.2s;
+      display: flex;
+      justify-content: center;
+      a {
+        width: 100%;
+        display: block;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .Kv {
+    height: vwsp(700);
+    .content {
+      gap: vwsp(10);
+    }
+    .title {
+      gap: vwsp(10);
+      span {
+        letter-spacing: vwsp(3);
+      }
+      .text1 {
+        font-size: vwsp(30);
+      }
+      .text2 {
+        font-size: vwsp(21);
+        margin-top: vwsp(74);
+      }
+      .text3 {
+        font-size: vwsp(17);
+        margin-top: vwsp(161);
+      }
+    }
+    .text {
+      padding-right: vwsp(16);
+    }
+    .image {
+      width: vwsp(257);
+    }
+    .sns {
+      gap: vwsp(24);
+      margin-top: vwsp(10);
+      margin-right: vwsp(4);
+      li {
+        width: vwsp(29);
+      }
+    }
+  }
+}

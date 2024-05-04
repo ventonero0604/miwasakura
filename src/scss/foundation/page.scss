@@ -4,20 +4,31 @@
 @import './variables.scss';
 
 body {
-  font-family: -apple-system-subset, Helvetica, Hiragino Kaku Gothic ProN, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
   position: relative;
-  color: $black;
-}
 
-a {
-  color: $black;
+  .mincho {
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .raleway {
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 a,
 button {
   transition: all 0.2s;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
 
