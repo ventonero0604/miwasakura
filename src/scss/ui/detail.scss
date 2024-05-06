@@ -30,6 +30,9 @@
 
   .image {
     margin-bottom: 20px;
+    &.label {
+      max-width: 400px;
+    }
   }
 
   .title {
@@ -53,4 +56,11 @@
 }
 
 @include breakPoint(md) {
+  .Detail {
+    .image {
+      &.label {
+        max-width: 194px;
+      }
+    }
+  }
 }
