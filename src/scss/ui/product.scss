@@ -2,8 +2,11 @@
   background-image: url(/img/product_bg.png);
   background-size: cover;
   background-position: center;
-  height: vwpc(1700);
+  height: vwpc(1800);
   padding: vwpc(20) vwpc(24) 0;
+  --swiper-theme-color: #ee8a98;
+  --swiper-pagination-bullet-inactive-color: #f5f0db;
+  --swiper-pagination-bullet-inactive-opacity: 1;
 
   .title {
     width: vwpc(231);
@@ -12,6 +15,28 @@
     margin-inline: auto;
     img {
       width: 100%;
+    }
+  }
+
+  .swiper {
+    padding: vwpc(5);
+    overflow: unset;
+    overflow-x: hidden;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    margin-top: vwpc(30);
+    .swiper-pagination-bullet {
+      width: vwpc(16);
+      height: vwpc(16);
+    }
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 vwpc(7);
     }
   }
 
@@ -39,10 +64,16 @@
     padding: vwpc(24) vwpc(22);
     .contents {
       display: flex;
-      gap: vwpc(44);
+      gap: vwpc(7);
     }
     &_image {
-      width: vwpc(74);
+      width: vwpc(112);
+      height: vwpc(262);
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
     }
     &_info {
       color: #eb7284;
@@ -173,8 +204,24 @@
 
 @include breakPoint(md) {
   .Product {
-    height: vwsp(1700);
+    height: vwsp(1780);
     padding: vwsp(20) vwsp(24) 0;
+
+    .swiper {
+      padding: vwsp(5);
+    }
+
+    .swiper-pagination {
+      margin-top: vwsp(30);
+      .swiper-pagination-bullet {
+        width: vwsp(16);
+        height: vwsp(16);
+      }
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 vwsp(7);
+      }
+    }
 
     .title {
       width: vwsp(231);
@@ -193,10 +240,11 @@
       margin-top: vwsp(30);
       padding: vwsp(24) vwsp(22);
       .contents {
-        gap: vwsp(44);
+        gap: vwsp(7);
       }
       &_image {
-        width: vwsp(74);
+        width: vwsp(112);
+        height: vwsp(262);
       }
       &_info {
         font-size: vwsp(12);

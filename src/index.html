@@ -17,406 +17,572 @@
 </head>
 
 <body>
-  <main class="Main">
-    <div class="Background">
-      <nav class="Navi">
-        <h1 class="logo"><a href="/"><img src="/img/navi_logo.svg" alt="みわさくら"></a></h1>
-        <ul class="list">
-          <li>
-            <a href="/">ALL ITEM</a>
-          </li>
-          <li>
-            <a href="/">SALE</a>
-          </li>
-          <li>
-            <a href="/">GOODS</a>
-          </li>
-          <li>
-            <a href="/">SIGN UP</a>
-          </li>
-          <li>
-            <a href="/">ABOUT</a>
-          </li>
-        </ul>
-        <ul class="sns">
-          <li>
-            <a href="/" class="insta"><img src="/img/navi_insta.svg" alt="instagram"></a>
-          </li>
-          <li>
-            <a href="/" class="x"><img src="/img/navi_x.svg" alt="X"></a>
-          </li>
-          <li>
-            <a href="/" class="line"><img src="/img/navi_line.svg" alt="LINE"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <div class="Top">
+    <div class="Main">
+      <div class="Background">
+        <nav class="Navi">
+          <h1 class="logo"><a href="/"><img src="/img/navi_logo.svg" alt="みわさくら"></a></h1>
+          <ul class="list">
+            <li>
+              <a href="/">ALL ITEM</a>
+            </li>
+            <li>
+              <a href="/">SALE</a>
+            </li>
+            <li>
+              <a href="/">GOODS</a>
+            </li>
+            <li>
+              <a href="/">SIGN UP</a>
+            </li>
+            <li>
+              <a href="/">ABOUT</a>
+            </li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a href="/" class="insta"><img src="/img/navi_insta.svg" alt="instagram"></a>
+            </li>
+            <li>
+              <a href="/" class="x"><img src="/img/navi_x.svg" alt="X"></a>
+            </li>
+            <li>
+              <a href="/" class="line"><img src="/img/navi_line.svg" alt="LINE"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="Container">
-      <section class="Kv">
-        <div class="content">
-          <figure class="image">
-            <img src="/img/kv.png" alt="">
-          </figure>
-          <div class="text">
-            <h2 class="title">
-              <span class="text1">二口目からおいしい</span>
-              <span class="text2">くらくらする酔ゑ体験</span>
-              <span class="text3">あとはお好きなように</span>
-            </h2>
-            <ul class="sns">
-              <li>
-                <a href="https://www.instagram.com/miwasakura.me/" target="_blank">
-                  <img src="/img/ico_instagram.svg" alt="instagram">
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/miwasakura_me" target="_blank">
-                  <img src="/img/ico_x.svg" alt="X">
-                </a>
-              </li>
-              <li>
-                <a href="https://lin.ee/OBS2Cvp" target="_blank">
-                  <img src="/img/ico_line.svg" alt="LINE">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="Lead">
-        <h2 class="title">
-          ホンモノの日本酒は、<br>
-          黄金色で濃い。
-        </h2>
-        <figure>
-          <img src="/img/img_lead_1.png" alt="">
-        </figure>
-        <h2 class="title">
-          米から違う、みわさくら。
-        </h2>
-        <p class="text">
-          ここは自然豊かな地、広島県三次市三和町。<br>
-          酒造好適米「八反錦」のふるさとの地で、<br>
-          社長と杜氏自ら稲を植え、米づくりからこだわります。
-        </p>
-        <figure>
-          <img src="/img/img_lead_2.png" alt="">
-        </figure>
-        <div class="Marquee">
-          <div class="inner">Fall in love with Sake.</div>
-          <div class="inner" aria-hidden="true">Fall in love with Sake.</div>
-        </div>
-      </section>
-
-      <section class="Product">
-        <figure class="title">
-          <img src="/img/ttl_product.svg" alt="">
-        </figure>
-        <h3 class="category"><span>sake</span></h3>
-        <div class="item">
-          <div class="contents">
-            <figure class="item_image">
-              <img src="/img/img_product_1.png" alt="">
+      <div class="Container">
+        {{> header}}
+        <section class="Kv">
+          <div class="content">
+            <figure class="image">
+              <img src="/img/kv.png" alt="">
             </figure>
-            <div class="item_texts">
-              <p class="item_info">WEB限定3000本</p>
-              <p class="item_subtitle">くらくら初濃いの味</p>
-              <p class="item_title">みわさくら 日本酒</p>
-              <p class="item_text">
-                三和町で作られた『八反錦』と大土山(おおづちやま)の伏流水で作った “ド直球” 純米酒。酒臭くない。ずっとうま口。
-              </p>
-              <p class="item_small">
-                アルコール分：15度<br>
-                原材料名：米、米麹
-              </p>
-              <div class="item_price_wrapper">
-                <div class="item_price">
-                  <p class="type">単品</p>
-                  <p class="detail"><span>720ml</span><span>¥2750円(税込)</span></p>
+            <div class="text">
+              <h2 class="title">
+                <span class="text1">二口目からおいしい</span>
+                <span class="text2">くらくらする酔ゑ体験</span>
+                <span class="text3">あとはお好きなように</span>
+              </h2>
+              <ul class="sns">
+                <li>
+                  <a href="https://www.instagram.com/miwasakura.me/" target="_blank">
+                    <img src="/img/ico_instagram.svg" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/miwasakura_me" target="_blank">
+                    <img src="/img/ico_x.svg" alt="X">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://lin.ee/OBS2Cvp" target="_blank">
+                    <img src="/img/ico_line.svg" alt="LINE">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="Lead">
+          <h2 class="title">
+            <span class="slideUp">ホンモノの日本酒は、</span>
+            <span class="slideUp">黄金色で濃い。</span>
+          </h2>
+          <figure>
+            <img src="/img/img_lead_1.png" alt="">
+          </figure>
+          <h2 class="title fadeIn">
+            米から違う、みわさくら。
+          </h2>
+          <p class="text fadeIn">
+            ここは自然豊かな地、広島県三次市三和町。<br>
+            酒造好適米「八反錦」のふるさとの地で、<br>
+            社長と杜氏自ら稲を植え、米づくりからこだわります。
+          </p>
+          <figure class="fadeIn">
+            <img src="/img/img_lead_2.png" alt="">
+          </figure>
+          <div class="Marquee">
+            <div class="inner">Fall in love with Sake.</div>
+            <div class="inner" aria-hidden="true">Fall in love with Sake.</div>
+          </div>
+        </section>
+
+        <section class="Product">
+          <figure class="title">
+            <img src="/img/ttl_product.svg" alt="">
+          </figure>
+          <h3 class="category"><span>sake</span></h3>
+
+          <div class="wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                  <div class="contents">
+                    <figure class="item_image">
+                      <img src="/img/img_product_1.png" alt="">
+                    </figure>
+                    <div class="item_texts">
+                      <p class="item_info">WEB限定3000本</p>
+                      <p class="item_subtitle">くらくら初濃いの味</p>
+                      <p class="item_title">みわさくら 日本酒</p>
+                      <p class="item_text">
+                        三和町で作られた『八反錦』と大土山(おおづちやま)の伏流水で作った “ド直球” 純米酒。酒臭くない。ずっとうま口。
+                      </p>
+                      <p class="item_small">
+                        アルコール分：15度<br>
+                        原材料名：米、米麹
+                      </p>
+                      <div class="item_price_wrapper">
+                        <div class="item_price">
+                          <p class="type">単品</p>
+                          <p class="detail"><span>720ml</span><span>¥2750円(税込)</span></p>
+                        </div>
+                        <!-- <div class="item_price">
+                      <p class="type">定期便</p>
+                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                    </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <div class="buttons_wrapper">
+                      <a href="/" class="black button">商品詳細</a>
+                      <a href="/" class="black button">カートに追加</a>
+                    </div>
+                    <a href="/" class="red button">購入する</a>
+                    <a href="/" class="pink button">楽天で購入する</a>
+                  </div>
                 </div>
-                <div class="item_price">
-                  <p class="type">定期便</p>
-                  <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                <div class="item swiper-slide">
+                  <div class="contents">
+                    <figure class="item_image">
+                      <img src="/img/img_product_2.png" alt="">
+                    </figure>
+                    <div class="item_texts">
+                      <p class="item_info">セットでお得</p>
+                      <p class="item_subtitle">くらくらする初濃いの味</p>
+                      <p class="item_title">のんべぇセット</p>
+                      <p class="item_text">
+                        みわさくら1本とオリジナルグッズのお猪口2つ、徳利1つがついているセットです。<br>
+                        最高の酔ゑ体験を楽しめます。
+                      </p>
+                      <p class="item_small">
+                        アルコール分：15度<br>
+                        原材料名：米、米麹
+                      </p>
+                      <div class="item_price_wrapper">
+                        <div class="item_price">
+                          <p class="type">セット</p>
+                          <p class="detail">¥5540円(税込)</p>
+                        </div>
+                        <!-- <div class="item_price">
+                      <p class="type">定期便</p>
+                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                    </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <div class="buttons_wrapper">
+                      <a href="/" class="black button">商品詳細</a>
+                      <a href="/" class="black button">カートに追加</a>
+                    </div>
+                    <a href="/" class="red button">購入する</a>
+                    <a href="/" class="pink button">楽天で購入する</a>
+                  </div>
                 </div>
+                <div class="item swiper-slide">
+                  <div class="contents">
+                    <figure class="item_image">
+                      <img src="/img/img_product_3.png" alt="">
+                    </figure>
+                    <div class="item_texts">
+                      <p class="item_info">セットでお得</p>
+                      <p class="item_subtitle">くらくらする初濃いの味</p>
+                      <p class="item_title">のんべぇセット</p>
+                      <p class="item_text">
+                        みわさくら1本とオリジナルグッズのお猪口1つ、徳利1つがついているセットです。<br>
+                        最高の酔ゑ体験を楽しめます。
+                      </p>
+                      <p class="item_small">
+                        アルコール分：15度<br>
+                        原材料名：米、米麹
+                      </p>
+                      <div class="item_price_wrapper">
+                        <div class="item_price">
+                          <p class="type">セット</p>
+                          <p class="detail">¥4689円(税込)</p>
+                        </div>
+                        <!-- <div class="item_price">
+                      <p class="type">定期便</p>
+                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                    </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <div class="buttons_wrapper">
+                      <a href="/" class="black button">商品詳細</a>
+                      <a href="/" class="black button">カートに追加</a>
+                    </div>
+                    <a href="/" class="red button">購入する</a>
+                    <a href="/" class="pink button">楽天で購入する</a>
+                  </div>
+                </div>
+                <div class="item swiper-slide">
+                  <div class="contents">
+                    <figure class="item_image">
+                      <img src="/img/img_product_4.png" alt="">
+                    </figure>
+                    <div class="item_texts">
+                      <p class="item_info">化粧箱付き</p>
+                      <p class="item_subtitle">くらくらする初濃いの味</p>
+                      <p class="item_title">みわさくら 日本酒</p>
+                      <p class="item_text">
+                        三和町で作られた『八反錦』と大土山(おおづちやま)の伏流水で作った “ド直球” 純米酒。酒臭くない。ずっとうま口。
+                      </p>
+                      <p class="item_small">
+                        アルコール分：15度<br>
+                        原材料名：米、米麹
+                      </p>
+                      <div class="item_price_wrapper">
+                        <div class="item_price">
+                          <p class="type">1本(化粧箱付)</p>
+                          <p class="detail">¥2440円(税込)</p>
+                        </div>
+                        <!-- <div class="item_price">
+                      <p class="type">定期便</p>
+                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                    </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <div class="buttons_wrapper">
+                      <a href="/" class="black button">商品詳細</a>
+                      <a href="/" class="black button">カートに追加</a>
+                    </div>
+                    <a href="/" class="red button">購入する</a>
+                    <a href="/" class="pink button">楽天で購入する</a>
+                  </div>
+                </div>
+                <div class="item swiper-slide">
+                  <div class="contents">
+                    <figure class="item_image">
+                      <img src="/img/img_product_4.png" alt="">
+                    </figure>
+                    <div class="item_texts">
+                      <p class="item_info">お友達用と一緒に</p>
+                      <p class="item_subtitle">くらくらする初濃いの味</p>
+                      <p class="item_title">みわさくら 日本酒</p>
+                      <p class="item_text">
+                        三和町で作られた『八反錦』と大土山(おおづちやま)の伏流水で作った “ド直球” 純米酒。酒臭くない。ずっとうま口。
+                      </p>
+                      <p class="item_small">
+                        アルコール分：15度<br>
+                        原材料名：米、米麹
+                      </p>
+                      <div class="item_price_wrapper">
+                        <div class="item_price">
+                          <p class="type">2本(化粧箱付)</p>
+                          <p class="detail">¥5430円(税込)</p>
+                        </div>
+                        <!-- <div class="item_price">
+                      <p class="type">定期便</p>
+                      <p class="detail"><span>720ml</span><span>¥2500円(税込)</span></p>
+                    </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <div class="buttons_wrapper">
+                      <a href="/" class="black button">商品詳細</a>
+                      <a href="/" class="black button">カートに追加</a>
+                    </div>
+                    <a href="/" class="red button">購入する</a>
+                    <a href="/" class="pink button">楽天で購入する</a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="buttons">
-            <div class="buttons_wrapper">
-              <a href="/" class="black button">商品詳細</a>
-              <a href="/" class="black button">カートに追加</a>
-            </div>
-            <a href="/" class="red button">購入する</a>
-            <a href="/" class="pink button">楽天で購入する</a>
+
+          <div class="swiper-pagination"></div>
+
+          <h4 class="lead slideUp">
+            みわさくらがもたらす上質な酔い体験、<br>
+            甘くとろけるような酔い体験をお楽しみください
+          </h4>
+          <figure class="image">
+            <img class="fadeIn" src="/img/txt_product.svg" alt="">
+          </figure>
+
+          <div class="banner">
+            <a href="https://www.instagram.com/miwasakura.me/" target="_blank">
+              <img src="/img/product_bnr_insta.png" alt="instagram">
+            </a>
+            <a href="https://lin.ee/OBS2Cvp" target="_blank">
+              <img src="/img/product_bnr_line.png" alt="LINE">
+            </a>
+            <a href="https://twitter.com/miwasakura_me" target="_blank">
+              <img src="/img/product_bnr_x.png" alt="X">
+            </a>
           </div>
-        </div>
+        </section>
 
-        <h4 class="lead">
-          みわさくらがもたらす上質な酔い体験、<br>
-          甘くとろけるような酔い体験をお楽しみください
-        </h4>
-        <figure class="image">
-          <img src="/img/txt_product.svg" alt="">
-        </figure>
-
-        <div class="banner">
-          <a href="/">
-            <img src="/img/product_bnr_insta.png" alt="instagram">
-          </a>
-          <a href="/">
-            <img src="/img/product_bnr_line.png" alt="LINE">
-          </a>
-          <a href="/">
-            <img src="/img/product_bnr_x.png" alt="X">
-          </a>
-        </div>
-      </section>
-
-      <section class="About">
-        <h3 class="SectionTitle">ABOUT</h3>
-        <h4 class="SectionTitle_lead">みわさくらの特徴</h4>
-        <ul class="list">
-          <li class="item">
-            <p class="title">
-              <span>01</span>
-              なぜみわさくらは<br><em>黄金色</em>なのか？
-            </p>
-            <div class="content">
-              <figure class="image">
-                <img src="/img/about_img_1.png" alt="">
+        <section class="About">
+          <h3 class="SectionTitle">ABOUT</h3>
+          <h4 class="SectionTitle_lead">みわさくらの特徴</h4>
+          <ul class="list">
+            <li class="item">
+              <p class="title slideInLeft">
+                <span>01</span>
+                なぜみわさくらは<br><em>黄金色</em>なのか？
+              </p>
+              <div class="content">
+                <figure class="image">
+                  <img src="/img/about_img_1.png" alt="">
+                </figure>
+                <p class="text mr">
+                  こだわりの自社精米によりお米を磨き、しっかりとした麹を造り、味と香りのバランスを意識して酒米のうま味を最大限に引き出す酒造りをしています。
+                </p>
+                <a class="link" href="#">
+                  <span>詳細を見る</span>
+                  <img src="/img/about_ico.svg" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="item">
+              <div class="content">
+                <figure class="image">
+                  <img src="/img/about_img_2.png" alt="">
+                </figure>
+                <p class="text ml">
+                  1924年に創業した広島県三次市の 酒造です。「手間暇かけても良い酒を」 という基本姿勢と、流行に流されない酒造りを貫きます。
+                </p>
+                <a class="link ml" href="#">
+                  <span>詳細を見る</span>
+                  <img src="/img/about_ico.svg" alt="">
+                </a>
+              </div>
+              <p class="title slideInRight">
+                <span>02</span>
+                <em>米からこだわった</em><br>美和桜酒造
+              </p>
+            </li>
+          </ul>
+          <div class="full">
+            <div class="titleWrapper">
+              <p class="title slideUp">
+                <span>03</span>
+                <em>八反錦</em>の<br>ふるさと
+              </p>
+              <figure>
+                <img src="/img/about_img_3.png" alt="">
               </figure>
-              <p class="text mr">
-                こだわりの自社精米によりお米を磨き、しっかりとした麹を造り、味と香りのバランスを意識して酒米のうま味を最大限に引き出す酒造りをしています。
+            </div>
+            <div class="texts">
+              <p class="text">
+                地元の土壌で育まれたお米と水、風土が共鳴し合う中で生まれる『みわさくら』はまさに大地の一滴。三和町のテロワールを是非お楽しみください。
               </p>
               <a class="link" href="#">
                 <span>詳細を見る</span>
                 <img src="/img/about_ico.svg" alt="">
               </a>
             </div>
-          </li>
-          <li class="item">
-            <div class="content">
-              <figure class="image">
-                <img src="/img/about_img_2.png" alt="">
-              </figure>
-              <p class="text ml">
-                1924年に創業した広島県三次市の 酒造です。「手間暇かけても良い酒を」 という基本姿勢と、流行に流されない酒造りを貫きます。
-              </p>
-              <a class="link ml" href="#">
-                <span>詳細を見る</span>
-                <img src="/img/about_ico.svg" alt="">
-              </a>
-            </div>
-            <p class="title">
-              <span>02</span>
-              <em>米からこだわった</em><br>美和桜酒造
-            </p>
-          </li>
-        </ul>
-        <div class="full">
-          <div class="titleWrapper">
-            <p class="title">
-              <span>03</span>
-              <em>八反錦</em>の<br>ふるさと
-            </p>
-            <figure>
-              <img src="/img/about_img_3.png" alt="">
-            </figure>
           </div>
-          <div class="texts">
-            <p class="text">
-              地元の土壌で育まれたお米と水、風土が共鳴し合う中で生まれる『みわさくら』はまさに大地の一滴。三和町のテロワールを是非お楽しみください。
-            </p>
-            <a class="link" href="#">
-              <span>詳細を見る</span>
-              <img src="/img/about_ico.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <div class="Info">
-        <section class="Goods">
-          <h3 class="SectionTitle SectionTitle-white">Goods</h3>
-          <h4 class="SectionTitle_lead SectionTitle_lead-white">オリジナルグッズ</h4>
-          <ul class="list">
-            <li>
-              <a href="/">
-                <figure class="image">
-                  <img src="/img/goods_img_1.png" alt="">
-                </figure>
-                <div class="texts">
-                  <p class="subTitle">みわさくらちゃん</p>
-                  <p class="title">アクリルキーホルダー</p>
-                  <p class="category">goods</p>
-                  <p class="price">¥800円（税込）</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <figure class="image">
-                  <img src="/img/goods_img_2.png" alt="">
-                </figure>
-                <div class="texts">
-                  <p class="subTitle">#酔ゑ～</p>
-                  <p class="title">とっくり</p>
-                  <p class="category">goods</p>
-                  <p class="price">¥800円（税込）</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <figure class="image">
-                  <img src="/img/goods_img_3.png" alt="">
-                </figure>
-                <div class="texts">
-                  <p class="subTitle">みわさくらちゃん</p>
-                  <p class="title">猪口</p>
-                  <p class="category">goods</p>
-                  <p class="price">¥800円（税込）</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <figure class="image">
-                  <img src="/img/goods_img_4.png" alt="">
-                </figure>
-                <div class="texts">
-                  <p class="subTitle">みわさくらちゃん</p>
-                  <p class="title">アクリルキーホルダー</p>
-                  <p class="category">goods</p>
-                  <p class="price">¥800円（税込）</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <a href="/" class="button">
-            <img src="/img/goods_button.svg" alt="商品一覧">
-          </a>
         </section>
-        <section class="Design">
-          <h3 class="SectionTitle SectionTitle-white">Character</h3>
-          <h4 class="SectionTitle_lead SectionTitle_lead-white">キャラクターデザイン</h4>
-          <div class="images">
-            <figure>
-              <img src="/img/design_img_1.png" alt="">
-            </figure>
-            <div class="content">
-              <figure>
-                <img src="/img/design_img_2.png" alt="">
-              </figure>
-              <div class="name">
-                <figure class="text">
-                  <img src="/img/design_name.png" alt="">
-                </figure>
-                <a href="/" class="link">
-                  <img src="/img/design_insta.png" alt="">
+
+        <div class="Info">
+          <section class="Goods">
+            <h3 class="SectionTitle SectionTitle-white">Goods</h3>
+            <h4 class="SectionTitle_lead SectionTitle_lead-white">オリジナルグッズ</h4>
+            <ul class="list">
+              <li>
+                <a href="/">
+                  <figure class="image">
+                    <img src="/img/goods_img_1.png" alt="">
+                  </figure>
+                  <div class="texts">
+                    <p class="subTitle">みわさくらちゃん</p>
+                    <p class="title">アクリルキーホルダー</p>
+                    <p class="category">goods</p>
+                    <p class="price">¥800円（税込）</p>
+                  </div>
                 </a>
+              </li>
+              <li>
+                <a href="/">
+                  <figure class="image">
+                    <img src="/img/goods_img_2.png" alt="">
+                  </figure>
+                  <div class="texts">
+                    <p class="subTitle">#酔ゑ～</p>
+                    <p class="title">とっくり</p>
+                    <p class="category">goods</p>
+                    <p class="price">¥800円（税込）</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <figure class="image">
+                    <img src="/img/goods_img_3.png" alt="">
+                  </figure>
+                  <div class="texts">
+                    <p class="subTitle">みわさくらちゃん</p>
+                    <p class="title">猪口</p>
+                    <p class="category">goods</p>
+                    <p class="price">¥800円（税込）</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <figure class="image">
+                    <img src="/img/goods_img_4.png" alt="">
+                  </figure>
+                  <div class="texts">
+                    <p class="subTitle">みわさくらちゃん</p>
+                    <p class="title">アクリルキーホルダー</p>
+                    <p class="category">goods</p>
+                    <p class="price">¥800円（税込）</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="/" class="button">
+              <img src="/img/goods_button.svg" alt="商品一覧">
+            </a>
+          </section>
+          <section class="Design">
+            <h3 class="SectionTitle SectionTitle-white">Character</h3>
+            <h4 class="SectionTitle_lead SectionTitle_lead-white">キャラクターデザイン</h4>
+            <div class="images slideUpSmall">
+              <figure>
+                <img class="slideUpSmall" src="/img/design_img_1.png" alt="">
+              </figure>
+              <div class="content">
+                <figure>
+                  <img class="slideUpSmall" src="/img/design_img_2.png" alt="">
+                </figure>
+                <div class="name slideUpSmall">
+                  <figure class="text">
+                    <img src="/img/design_name.png" alt="">
+                  </figure>
+                  <a href="/" class="link">
+                    <img src="/img/design_insta.png" alt="">
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="texts">
-            <p>
-              今回の商品『みわさくら』は妖怪物語《稲生物怪録》の舞台である三次市で生まれたお酒です。それにちなんで『みわさくら』を妖艶な魅力で、初濃いを味わった人を虜にする艶美な妖怪として表現しました。
-            </p>
-            <p>
-              『みわさくら』のかわいい見た目に反した、濃い味わいに必ず騙されてしまうはず…そう思い騙されたみなさんに向けて、舌をぺろっと出した、いたずらっ子の表情を採用しました。
-            </p>
-            <p>
-              ペアリングや、呑む時の温度などによって表情がくるくる変わるみわさくらは、２層式のシールで表現しています。（全3種）
-            </p>
-            <figure class="text">
-              <img src="/img/design_img_3.png" alt="">
+            <div class="texts">
+              <p>
+                今回の商品『みわさくら』は妖怪物語《稲生物怪録》の舞台である三次市で生まれたお酒です。それにちなんで『みわさくら』を妖艶な魅力で、初濃いを味わった人を虜にする艶美な妖怪として表現しました。
+              </p>
+              <p>
+                『みわさくら』のかわいい見た目に反した、濃い味わいに必ず騙されてしまうはず…そう思い騙されたみなさんに向けて、舌をぺろっと出した、いたずらっ子の表情を採用しました。
+              </p>
+              <p>
+                ペアリングや、呑む時の温度などによって表情がくるくる変わるみわさくらは、２層式のシールで表現しています。（全3種）
+              </p>
+              <figure class="text">
+                <img src="/img/design_img_3.png" alt="">
+              </figure>
+              <p>
+                ぜひみなさんラベルをめくって<br>
+                楽しんでください。
+              </p>
+              <p>
+                <b>キャラクターデザイン</b><br>
+                広島県在住のイラストレーターaya.mさん。
+                シンプルでキュートなタッチが多くの女性ファンに支持され「街で見かけたおしゃれさん」がInstagramで注目を集めています
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <section class="Media">
+          <div class="insta">
+            <figure class="subTitle">
+              <img src="/img/media_insta.svg" alt="instagram">
             </figure>
-            <p>
-              ぜひみなさんラベルをめくって<br>
-              楽しんでください。
-            </p>
-            <p>
-              <b>キャラクターデザイン</b><br>
-              広島県在住のイラストレーターaya.mさん。
-              シンプルでキュートなタッチが多くの女性ファンに支持され「街で見かけたおしゃれさん」がInstagramで注目を集めています
-            </p>
+            <h3 class="title">
+              <img src="/img/media_insta_title.svg" alt="魅せて！#酔ゑ〜体験">
+            </h3>
+            <ul class="tags">
+              <li>
+                <a href="https://www.instagram.com/explore/tags/%E9%85%94%E3%82%91/" class="tag" target="_blank">#酔ゑ</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/explore/tags/%E3%81%BF%E3%82%8F%E3%81%95%E3%81%8F%E3%82%89/"
+                  class="tag" target="_blank">#みわさくら</a>
+              </li>
+            </ul>
+            <figure class="image">
+              <img src="/img/media_insta_img.png" alt="">
+            </figure>
+            <a href="https://www.instagram.com/miwasakura.me/" class="button" target="_blank">
+              <img src="/img/media_button_follow.png" alt="Follow Us">
+            </a>
+          </div>
+          <div class="Marquee Marquee-pink">
+            <div class="inner">@miwasakura</div>
+            <div class="inner" aria-hidden="true">@miwasakura</div>
+          </div>
+          <div class="media">
+            <h3 class="SectionTitle SectionTitle-gray">Media</h3>
+            <h4 class="SectionTitle_lead SectionTitle_lead-gray">メディア掲載</h4>
+            <div class="item">
+              <figure class="image">
+                <img src="/img/media_img_1.png" alt="Pococe 2024年4月 Issue249">
+                <img src="/img/media_title_1.png" alt="Pococe">
+              </figure>
+              <p class="text">
+                2024年4月 Issue249<br><span>心機一転！春から始める、<br>私の新習慣</span>
+              </p>
+            </div>
           </div>
         </section>
-      </div>
 
-      <section class="Media">
-        <div class="insta">
-          <figure class="subTitle">
-            <img src="/img/media_insta.svg" alt="instagram">
-          </figure>
-          <h3 class="title">
-            <img src="/img/media_insta_title.svg" alt="魅せて！#酔ゑ〜体験">
-          </h3>
-          <ul class="tags">
-            <li>
-              <a href="#" class="tag">#酔ゑ</a>
-            </li>
-            <li>
-              <a href="#" class="tag">#みわさくら</a>
-            </li>
-          </ul>
-          <figure class="image">
-            <img src="/img/media_insta_img.png" alt="">
-          </figure>
-          <a href="/" class="button">
-            <img src="/img/media_button_follow.png" alt="">
-          </a>
-        </div>
-        <div class="Marquee Marquee-pink">
-          <div class="inner">@miwasakura</div>
-          <div class="inner" aria-hidden="true">@miwasakura</div>
-        </div>
-        <div class="media">
-          <h3 class="SectionTitle SectionTitle-gray">Media</h3>
-          <h4 class="SectionTitle_lead SectionTitle_lead-gray">メディア掲載</h4>
-          <div class="item">
-            <figure class="image">
-              <img src="/img/media_img_1.png" alt="Pococe 2024年4月 Issue249">
-              <img src="/img/media_title_1.png" alt="Pococe">
-            </figure>
-            <p class="text">
-              2024年4月 Issue249<br><span>心機一転！春から始める、<br>私の新習慣</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="Topics">
-        <div class="wrapper">
-          <h3 class="title">News<span>お知らせ</span></h3>
-          <div class="list">
-            <article class="item" id="news_1">
-              <a class="item_inner" href="/shop/information/02">
-                <time class="item_inner_date">2024.05.04</time>
-                <div class="item_inner_title">テスト投稿です</div>
-              </a>
-            </article>
-            <article class="item" id="news_2">
-              <a class="item_inner" href="/shop/information/01">
-                <time class="item_inner_date">2024.05.03</time>
-                <div class="item_inner_title">オンラインストアを公開しました。</div>
-              </a>
-            </article>
-          </div>
-          <a href="/" class="Button">
-            <div>
-              もっと見る
-              <img src="/img/ico_arrow_button.svg" alt="">
+        <section class="Topics">
+          <div class="wrapper">
+            <h3 class="title">News<span>お知らせ</span></h3>
+            <div class="list">
+              <article class="item" id="news_1">
+                <a class="item_inner" href="/shop/information/02">
+                  <time class="item_inner_date">2024.05.04</time>
+                  <div class="item_inner_title">テスト投稿です</div>
+                </a>
+              </article>
+              <article class="item" id="news_2">
+                <a class="item_inner" href="/shop/information/01">
+                  <time class="item_inner_date">2024.05.03</time>
+                  <div class="item_inner_title">オンラインストアを公開しました。</div>
+                </a>
+              </article>
             </div>
-          </a>
-        </div>
-      </section>
+            <a href="/" class="Button">
+              <div>
+                もっと見る
+                <img src="/img/ico_arrow_button.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </section>
 
+        {{> footer}}
 
+      </div>
     </div>
-  </main>
+  </div>
+
   <script type="module" src="./js/main.js"></script>
 </body>
 

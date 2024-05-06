@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="./scss/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main class="Detail">
+    <div id="add_product_async_view">
+      <div id="cart-addition-failure" class="p-product_alert" style="display:none;">
+        <div class="control-alert alert-danger">
+          <div class="text u-color__bg--bg u-color__text--alert">
+            <div>
+              <p id="addition-failure-message"></p>
+              <p id="btn-show-addition-failure-details" class="p-product_alert__details_show_btn" style="display:none;">
+                さらに詳しく</p>
+            </div>
+
+            <div>
+              <p id="addition-failure-details" class="p-product_alert__details" style="display:none;"></p>
+              <p id="btn-hide-addition-failure-details" class="p-product_alert__details_hide_btn" style="display:none;">
+                閉じる</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="favorite-failure" class="p-product_alert" style="display:none;">
+        <div class="control-alert alert-danger">
+          <div class="text u-color__bg--bg u-color__text--alert">
+            <p id="favorite-failure-message"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-container__row">
+        <div class="p-product_content">
+          <div class="p-product_content__breadcrumbs p-product_content__breadcrumbs--pc">
+            <ol class="c-breadcrumbs u-text--body">
+              <li class="c-breadcrumbs__item">
+                <a class="c-breadcrumbs__item__inner u-text--link" href="/shop" style="pointer-events: none;">TOP</a>
+              </li>
+              <li class="c-breadcrumbs__item">
+                <a class="c-breadcrumbs__item__inner u-text--link" href="/shop/product_categories/sake"
+                  style="pointer-events: none;">SAKE</a>
+              </li>
+              <li class="c-breadcrumbs__item">みわさくら 3本セット</li>
+            </ol>
+          </div>
+
+          <div class="p-product_content__inner" data-section-id="products_show_content"
+            data-section-type="products_show_content-section">
+            <div class="p-product_content__inner__img">
+              <div class="c-product_img">
+                <div
+                  class="c-product_img__slider c-product_img__slider--main splide splide--fade splide--ltr splide--draggable is-active"
+                  id="splide02" style="visibility: visible;">
+                  <div class="c-product_img__track splide__track" id="splide02-track">
+                    <ul class="c-product_img__list splide__list" id="splide02-list">
+                      <li class="c-product_img__item splide__slide is-active is-visible" id="splide02-slide01"
+                        aria-hidden="false" tabindex="0"
+                        style="width: 345px; transition: opacity 400ms cubic-bezier(0.42, 0.65, 0.27, 0.99) 0s;">
+                        <img class="c-product_img__image"
+                          src="https://d2w53g1q050m78.cloudfront.net/miwasakurame/ec_assets/e8be89857709826d1fea210099a3894ba64c7907-original.png?1714716929"
+                          alt="みわさくら 3本セット">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  class="c-product_img__slider c-product_img__slider--thumbnail splide splide--slide splide--ltr splide--draggable splide--nav is-active"
+                  id="splide01" style="visibility: visible;">
+                  <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev" type="button"
+                      aria-controls="splide01-track" disabled="" aria-label="Previous slide"
+                      style="pointer-events: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
+                        width="40" height="40">
+                        <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                        </path>
+                      </svg></button><button class="splide__arrow splide__arrow--next" type="button"
+                      aria-controls="splide01-track" disabled="" aria-label="Next slide"
+                      style="pointer-events: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
+                        width="40" height="40">
+                        <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                        </path>
+                      </svg></button></div>
+                  <div class="c-product_img__track splide__track" id="splide01-track">
+                    <ul class="c-product_img__list splide__list" id="splide01-list" style="transform: translateX(0px);">
+                      <li class="c-product_img__item splide__slide is-active is-visible" id="splide01-slide01"
+                        aria-current="true" aria-hidden="false" tabindex="0" role="button" aria-label="Go to slide 1"
+                        aria-controls="splide02-slide01" style="margin-right: 11px; width: 60px; height: 80px;">
+                        <img class="c-product_img__image"
+                          src="https://d2w53g1q050m78.cloudfront.net/miwasakurame/ec_assets/e8be89857709826d1fea210099a3894ba64c7907-original.png?1714716929"
+                          alt="みわさくら 3本セット">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section class="p-product_content__inner__info ">
+              <div class="c-product_info">
+                <form id="add-shop-cart-form" action="/shop/cart/add" method="post">
+                  <input name="authenticity_token"
+                    value="FNESwmM6NYo8H+SiUAAoFK4Ub3ZjjgExFzSwK6p7sGCzVzXYOeGHCZrppCmAgIpdG2H+C/3ViJJQpMRkGGrIBQ=="
+                    type="hidden" style="pointer-events: none;">
+                  <div class="c-product_info__category u-text--body" id="product-category">
+                    SAKE
+                  </div>
+                  <h1 class="c-product_info__title u-text--head" id="product-name">みわさくら 3本セット</h1>
+                  <div class="c-product_info__price">
+                    <span id="product-price-content" class="u-text--subhead">
+
+                      <span id="sales-price" class="sales_price u-text--subhead">¥5,970</span>
+                      <span class="u-text--subhead">(税込価格 </span>
+                      <span id="sales-price-include-tax" class="sales_price-include-tax u-text--subhead">¥6,567</span>
+                      <span class="u-text--subhead">)</span>
+
+                    </span>
+                  </div>
+                  <div
+                    class="c-product_info__form__buttons btn-flex c-product_info__form__subsdetail__input__inputwrap">
+                    <label
+                      class="c-product_info__form__submit u-text--btn--reverse u-color__btn--bg--reverse fix-hover btn-half"
+                      id="label-single-product" style="pointer-events: none;">
+                      <input type="radio" name="co_selling_product" value="" checked="checked" id="btn-single-product"
+                        style="pointer-events: none;">
+                      <span class="frame u-color__bg--base u-color__border--border"></span>
+                      <span class="label">単品購入</span>
+                    </label>
+                    <label
+                      class="c-product_info__form__submit u-text--btn--reverse u-color__btn--bg--reverse fix-hover btn-half c-product_lable"
+                      id="label-recurring-product" style="pointer-events: none;">
+                      <input type="radio" name="co_selling_product" value="" id="btn-recurring-product"
+                        style="pointer-events: none;">
+                      <span class="frame u-color__bg--base u-color__border--border"></span>
+                      <span class="label">定期購入</span>
+                    </label>
+                  </div>
+                  <input id="variant-id" type="hidden" name="variant_id" value="12" form="add-shop-cart-form"
+                    style="pointer-events: none;">
+                  <div id="option_types"
+                    class="sortable c-product_info__form__variant u-color--input u-color__input--bg u-color__border--input">
+                  </div>
+                  <div class="c-product_info__form__quantity">
+                    <label class="c-product_info__form__quantity__label u-text--body"
+                      style="pointer-events: none;">数量</label>
+
+                    <div class="c-product_info__form__quantity__wrap">
+                      <label class="c-order_quantity" style="pointer-events: none;">
+                        <input id="input-quantity" name="quantity"
+                          class="c-order_quantity__input u-color--input u-color__input--bg u-color__border--input"
+                          type="number" min="1" max="10" value="1" form="add-shop-cart-form"
+                          style="pointer-events: none;">
+                        <button class="u-color--input" id="btn-minus" type="button" style="pointer-events: none;"><i
+                            class="u-icon--minus"></i></button>
+                        <button class="u-color--input" id="btn-plus" type="button" style="pointer-events: none;"><i
+                            class="u-icon--plus"></i></button>
+                      </label>
+                    </div>
+
+                  </div>
+
+                  <div class="c-product_info__form__buttons">
+                  </div>
+
+                  <div class="c-product_info__form__buttons" id="pre_order_message">
+
+                    <button id="btn-add" class="c-product_info__form__submit u-text--btn u-color__btn--bg fix-hover"
+                      type="submit" form="add-shop-cart-form" style="pointer-events: none;">購入手続きへ</button>
+
+                  </div>
+                  <a id="btn-stock-waiting-list"
+                    class="c-product_info__form__submit u-text--btn u-color__btn--bg fix-hover"
+                    href="javascript:void(0);" style="display: none; pointer-events: none;">
+                    [SOLD OUT] 再入荷お知らせ
+                  </a>
+                  <div class="c-product_info__favorite">
+                    <button type="button" class="c-product_info__favorite__btn u-text--link js-favorite-async"
+                      data-is-favorite="false" data-add-value="お気に入りに追加" data-adding-value="登録中..."
+                      data-cancel-value="お気に入り解除" data-canceling-value="解除中" style="pointer-events: none;">
+                      <i class="favorite-icon u-color--head"></i>
+                      <span class="favorite-text u-text--link"></span>
+                    </button>
+                  </div>
+                  <div class="c-product_info__description u-text--body" id="description"></div>
+
+                  <div data-section-id="sns" class="c-product_info__share">
+
+                    <div class="c-product_info__share__label u-text--body">
+                      この商品をシェア
+                    </div>
+                    <ul class="c-product_info__share__list u-color--head">
+
+                      <li class="c-product_info__share__list__item">
+                        <a class="c-product_info__share__list__item__inner"
+                          href="https://www.facebook.com/share.php?u=https%3A%2F%2Fmiwasakura.me%2Fshop%2Fproducts%2Fmiwasakura_720_3"
+                          rel="nofollow" target="_blank" style="pointer-events: none;">
+                          <i class="u-icon--facebook"></i>
+                        </a>
+                      </li>
+
+
+                      <li class="c-product_info__share__list__item">
+                        <a class="c-product_info__share__list__item__inner"
+                          href="https://twitter.com/share?url=https%3A%2F%2Fmiwasakura.me%2Fshop%2Fproducts%2Fmiwasakura_720_3"
+                          rel="nofollow" target="_blank" style="pointer-events: none;">
+                          <i class="u-icon--twitter"></i>
+                        </a>
+                      </li>
+
+
+                      <li class="c-product_info__share__list__item">
+                        <a class="c-product_info__share__list__item__inner"
+                          href="https://line.me/R/msg/text/?https%3A%2F%2Fmiwasakura.me%2Fshop%2Fproducts%2Fmiwasakura_720_3"
+                          rel="nofollow" target="_blank" style="pointer-events: none;">
+                          <i class="u-icon--line"></i>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+
+      {{>detail}}
+
+
+
+
+      <section class="p-recommend_product" data-section-id="products_show_recommend"
+        data-section-type="products_show_recommend" style="background: #FFFFFF;">
+
+        <div class="l-container__row p-recommend_product recommend_product_padding">
+          <div class="p-recommend_product__inner">
+            <header class="p-recommend_product__inner__title">
+              <h2 class="p-recommend_product__inner__title__en u-text--head">RECOMMEND</h2>
+              <span class="p-recommend_product__inner__title__jp u-text--subhead">おすすめ商品</span>
+            </header>
+
+
+            <div class="p-product_slider slick">
+              <ul class="p-product_slider__list slider-0 slick-initialized slick-slider">
+                <div class="slick-list draggable">
+                  <div class="slick-track" style="opacity: 1; width: 165px; transform: translate3d(0px, 0px, 0px);">
+                    <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
+                      style="width: 150px;">
+                      <div>
+                        <li id="products_show_recommend_1" class="p-product_slider__item"
+                          style="width: 100%; display: inline-block;">
+
+                          <div class="c-product_item">
+                            <a class="c-product_item__link" href="/shop/products/miwasakura_720" tabindex="0"
+                              style="pointer-events: none;"></a>
+                            <div class="c-product_item__inner__eyecatch">
+
+                              <div class="c-product_item__inner__eyecatch__img"
+                                style="background-size:contain;background-image:url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/ec_assets/155b386597ce76a64a7e2154fca6aa4586870d67-original.png?1714718801)">
+                              </div>
+
+                              <div class="c-product_item__inner__eyecatch__tags">
+
+                                <div class="c-product_item__inner__eyecatch__tags__new">NEW</div>
+                              </div>
+
+
+                              <div class="c-product_item__actions">
+
+
+                                <form class="c-product_item__form c-product_item__form--cart" action="/shop/cart/add"
+                                  method="post">
+                                  <input name="authenticity_token"
+                                    value="FNESwmM6NYo8H+SiUAAoFK4Ub3ZjjgExFzSwK6p7sGCzVzXYOeGHCZrppCmAgIpdG2H+C/3ViJJQpMRkGGrIBQ=="
+                                    type="hidden" tabindex="0" style="pointer-events: none;">
+                                  <input name="variant_id" type="hidden" value="1" tabindex="0"
+                                    style="pointer-events: none;">
+                                  <input name="quantity" type="hidden" value="1" tabindex="0"
+                                    style="pointer-events: none;">
+                                  <button
+                                    class="c-product_item__button c-product_item__button--cart u-color__btn--text u-color__btn--bg"
+                                    type="submit" tabindex="0" style="pointer-events: none;">
+                                    <i class="u-icon--cart"></i>
+                                  </button>
+                                </form>
+
+                                <form class="c-product_item__form c-product_item__form--favorite"
+                                  action="/shop/products/miwasakura_720/favorite?customer_return_to=%2Fshop%2Fproducts%2Fmiwasakura_720"
+                                  method="post">
+                                  <input name="authenticity_token"
+                                    value="FNESwmM6NYo8H+SiUAAoFK4Ub3ZjjgExFzSwK6p7sGCzVzXYOeGHCZrppCmAgIpdG2H+C/3ViJJQpMRkGGrIBQ=="
+                                    type="hidden" tabindex="0" style="pointer-events: none;">
+                                  <button
+                                    class="c-product_item__button c-product_item__button--favorite u-color__btn--text u-color__btn--bg"
+                                    type="submit" tabindex="0" style="pointer-events: none;">
+                                    <i class="u-icon--heart"></i>
+                                  </button>
+                                </form>
+
+                              </div>
+                            </div>
+                            <div class="c-product_item__inner__content">
+                              <div class="c-product_item__inner__title">みわさくら 純米酒</div>
+                              <div class="c-product_item__inner__category">
+
+
+                                SAKE
+                              </div>
+
+
+                              <div class="c-product_item__inner__price u-color__text--sub">
+                                <span class="price">¥1,990</span>
+                                <span>&nbsp;(税込価格</span>
+                                <span id="price">¥2,189</span>
+                                <span>)</span>
+                              </div>
+
+
+                              <div class="c-product_item__inner__price u-text--body">
+                                <div class="product_description">
+
+                                  三和町で作られた『八反錦』と大土山(おおづちやま)の伏流水で作った “ド直球” 純米酒。酒臭くない。ずっとうま口。
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <div class="p-product_slider__nav"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <div class="p-product_content__breadcrumbs p-product_content__breadcrumbs--sp u-color__border--border footer_bg">
+
+        <ol class="c-breadcrumbs u-text--body">
+          <li class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__item__inner u-text--link" href="/shop" style="pointer-events: none;">TOP</a>
+          </li>
+
+          <li class="c-breadcrumbs__item">
+            <a class="c-breadcrumbs__item__inner u-text--link" href="/shop/product_categories/sake"
+              style="pointer-events: none;">SAKE</a>
+          </li>
+
+          <li class="c-breadcrumbs__item">みわさくら 3本セット</li>
+        </ol>
+
+      </div>
+
+    </div>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

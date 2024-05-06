@@ -1,0 +1,55 @@
+.Top {
+  .Header {
+    width: vwpc(375);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    border: unset;
+    .l-header__inner {
+      height: unset;
+      padding: 0 vwpc(20);
+      background: rgba(255, 255, 255, 0.7);
+      height: vwpc(53);
+      border-radius: 0px 0px 20px 20px;
+    }
+    .l-header__inner__block__logo {
+      width: vwpc(70);
+    }
+
+    i {
+      color: #eb7284 !important;
+      font-size: vwpc(20);
+    }
+
+    .c-announce_bar {
+      height: vwpc(32);
+      padding: unset;
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+@include breakPoint(md) {
+  .Top {
+    .Header {
+      width: vwsp(375);
+      .l-header__inner {
+        padding: 0 vwsp(20);
+        height: vwsp(53);
+      }
+      .l-header__inner__block__logo {
+        width: vwsp(70);
+      }
+
+      i {
+        font-size: vwsp(20);
+      }
+
+      .c-announce_bar {
+        height: vwsp(32);
+      }
+    }
+  }
+}

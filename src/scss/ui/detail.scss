@@ -1,0 +1,56 @@
+.Detail {
+  padding-bottom: 40px;
+  .wrapper {
+    max-width: 800px;
+    padding-inline: 20px;
+    margin-inline: auto;
+  }
+  .dashBorder {
+    padding-bottom: 32px;
+    border-bottom: 1px dashed #d9d9d9;
+  }
+
+  .dashBorder + .wrapper {
+    margin-top: 48px;
+  }
+
+  .description {
+    margin-top: 56px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22.4px; /* 186.667% */
+    display: grid;
+    gap: 48px;
+  }
+
+  .banner {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .image {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    color: #474747;
+    text-align: center;
+    font-family: $mincho;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.2px; /* 114.545% */
+    margin-bottom: 30px;
+  }
+
+  .text {
+    color: #474747;
+    font-family: 'Noto Sans JP';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px; /* 160% */
+    letter-spacing: 1.4px;
+  }
+}
+
+@include breakPoint(md) {
+}

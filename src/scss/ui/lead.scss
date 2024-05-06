@@ -9,6 +9,9 @@
     letter-spacing: vwpc(3);
     font-family: $mincho;
     text-align: center;
+    span {
+      display: block;
+    }
   }
   .text {
     font-size: vwpc(12);

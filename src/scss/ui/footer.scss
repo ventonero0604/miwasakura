@@ -1,0 +1,41 @@
+.Top {
+  .l-footer {
+    flex-direction: column;
+    padding: vwpc(40) vwpc(30) vwpc(30);
+  }
+  .l-footer__info {
+    order: 2;
+  }
+  .l-footer__menu {
+    display: block;
+  }
+  .c-footer_menu {
+    margin-left: 0;
+    padding: 0 vwpc(10) vwpc(20);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-bottom: vwpc(20);
+  }
+}
+
+@include breakPoint(md) {
+  .Top {
+    .l-footer {
+      flex-direction: column;
+      padding: vwsp(40) vwsp(30) vwsp(30);
+    }
+    .l-footer__info {
+      order: 2;
+    }
+    .l-footer__menu {
+      display: block;
+    }
+    .c-footer_menu {
+      margin-left: 0;
+      padding: 0 vwsp(10) vwsp(20);
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin-bottom: vwsp(20);
+    }
+  }
+}
