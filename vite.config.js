@@ -11,7 +11,7 @@ const pageData = {
     isHome: true,
     title: 'Main Page'
   },
-  'hoge.html': {
+  'detail.html': {
     isHome: false,
     title: 'Hoge'
   }
@@ -44,8 +44,8 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name].js'
       },
       input: {
-        index: resolve(__dirname, 'index.html'),
-        hoge: resolve(__dirname, 'hoge.html')
+        index: resolve(root, 'index.html'),
+        detail: resolve(root, 'detail.html')
       }
     }
   },

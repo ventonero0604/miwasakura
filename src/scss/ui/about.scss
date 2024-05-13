@@ -7,7 +7,8 @@
     position: absolute;
     top: vwpc(-170);
     right: vwpc(20);
-    background: center / contain no-repeat url('/img/about_bg.png');
+    background: center / contain no-repeat
+      url('https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/about_bg.png?1714984575648');
     width: vwpc(150);
     height: vwpc(300);
   }
@@ -42,6 +43,7 @@
     }
     em {
       position: relative;
+      display: inline-block;
       &:after {
         position: absolute;
         content: '';

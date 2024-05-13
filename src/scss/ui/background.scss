@@ -1,6 +1,6 @@
 .Background {
   position: fixed;
-  background-image: url(/img/bg_fixed.jpg);
+  background-image: url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/bg_fixed.webp?1715086459377);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -9,4 +9,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+}
+
+@include breakPoint(md) {
+  .Background {
+    background-image: unset;
+  }
 }

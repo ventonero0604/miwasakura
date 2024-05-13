@@ -1,4 +1,5 @@
 .Media {
+  padding-top: vwpc(30);
   .insta {
     display: grid;
     place-items: center;
@@ -70,6 +71,7 @@
 
 @include breakPoint(md) {
   .Media {
+    padding-top: vwsp(30);
     .insta {
       padding: 0 vwsp(18) vwsp(8);
       .subTitle {

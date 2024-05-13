@@ -10,7 +10,8 @@
     display: block;
     width: vwpc(186);
     height: vwpc(383);
-    background: center / cover no-repeat url(/img/topics_img.png);
+    background: center / cover no-repeat
+      url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/topics_img.png?1714984575655);
     transform: translateX(-50%);
     z-index: 2;
   }
@@ -22,12 +23,13 @@
     display: block;
     width: 100%;
     height: vwpc(44);
-    background: center / cover no-repeat url(/img/topics_bg.png);
+    background: center / cover no-repeat
+      url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/topics_bg.png?1714984575654);
   }
 
   .wrapper {
     background-color: #fff3f5;
-    padding: vwpc(30) vwpc(14) vwpc(100);
+    padding: vwpc(30) 0 0;
   }
 
   .title {
@@ -88,7 +90,7 @@
     }
 
     .wrapper {
-      padding: vwsp(30) vwsp(14) vwsp(100);
+      padding: vwsp(30) 0 0;
     }
 
     .title {

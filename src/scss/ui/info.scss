@@ -1,14 +1,29 @@
 .Info {
-  background-image: url(/img/info_bg.png);
+  background-image: url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/info_bg.png?1715085559638);
   background-size: cover;
   background-position: center;
-  height: vwpc(2140);
+  height: vwpc(2783);
   padding-top: vwpc(45);
+  position: relative;
+  .imageText {
+    position: absolute;
+    bottom: vwpc(36);
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: vwpc(313);
+    height: vwpc(135);
+  }
 }
 
 @include breakPoint(md) {
   .Info {
-    height: vwsp(2140);
+    height: vwsp(2783);
     padding-top: vwsp(45);
+    .imageText {
+      bottom: vwsp(36);
+      width: vwsp(313);
+      height: vwsp(135);
+    }
   }
 }

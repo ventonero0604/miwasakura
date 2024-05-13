@@ -1,5 +1,5 @@
 .Product {
-  background-image: url(/img/product_bg.png);
+  background-image: url(https://d2w53g1q050m78.cloudfront.net/miwasakurame/uploads/img/product_bg.png?1714984575653);
   background-size: cover;
   background-position: center;
   height: vwpc(1800);
@@ -188,11 +188,7 @@
   }
 
   .image {
-    width: vwpc(291);
-    margin-top: vwpc(-12);
-    img {
-      width: 100%;
-    }
+    margin: vwpc(20) vwpc(-24) 0;
   }
 
   .banner {
@@ -306,8 +302,7 @@
     }
 
     .image {
-      width: vwsp(291);
-      margin-top: vwsp(-12);
+      margin: vwsp(20) vwsp(-24) 0;
     }
 
     .banner {
